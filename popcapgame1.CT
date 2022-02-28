@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="34">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"冒险关卡"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>popcapgame1.exe+2A9EC0</Address>
+      <Offsets>
+        <Offset>24</Offset>
+        <Offset>82C</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>7</ID>
+      <Description>"阳光"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>popcapgame1.exe+2A9EC0</Address>
+      <Offsets>
+        <Offset>5560</Offset>
+        <Offset>04</Offset>
+        <Offset>160</Offset>
+        <Offset>768</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>10</ID>
+      <Description>"金币"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>popcapgame1.exe+2A9EC0</Address>
+      <Offsets>
+        <Offset>28</Offset>
+        <Offset>82C</Offset>
+      </Offsets>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
