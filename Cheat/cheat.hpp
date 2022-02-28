@@ -29,9 +29,9 @@ extern "C"
 
     __declspec(dllexport) void PVZSetSun(HWND hPVZ, int val)
     {
-        int off[] = {0x768, 0x160, 0x4, 0x5560};
+        int off[] = {0x768, 0x5560};
         HANDLE hProc = GetHandle(hPVZ);
-        LPVOID pSun = GetAddress(hProc, (LPVOID)BASE_ADDRESS, off, 4);
+        LPVOID pSun = GetAddress(hProc, (LPVOID)BASE_ADDRESS, off, 2);
         WriteProcessMemory(hProc, pSun, (LPVOID)&val, 4, NULL);
     }
 
