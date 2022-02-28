@@ -1,0 +1,27 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "build",
+            "command": "g++.exe",
+            "args": [
+                "dllmain.cpp",
+                "-static",
+                "-o",
+                "..\\PvZCheatDemo\\cheat.dll"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "编译cheat.dll"
+        }
+    ],
+    "version": "2.0.0"
+}

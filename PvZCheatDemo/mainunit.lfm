@@ -1,0 +1,99 @@
+object MainForm: TMainForm
+  Left = 332
+  Height = 160
+  Top = 193
+  Width = 320
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'PvZCheatDemo'
+  ClientHeight = 160
+  ClientWidth = 320
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '2.2.0.4'
+  object LabelSun: TLabel
+    Left = 20
+    Height = 28
+    Top = 24
+    Width = 70
+    AutoSize = False
+    Caption = '阳光'
+    Layout = tlCenter
+  end
+  object LabelCoin: TLabel
+    Left = 20
+    Height = 28
+    Top = 64
+    Width = 70
+    AutoSize = False
+    Caption = '金币'
+    Layout = tlCenter
+  end
+  object LabelAdvProg: TLabel
+    Left = 20
+    Height = 28
+    Top = 104
+    Width = 70
+    AutoSize = False
+    Caption = '冒险关卡'
+    Layout = tlCenter
+  end
+  object EditSun: TEdit
+    Left = 100
+    Height = 28
+    Top = 24
+    Width = 119
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 0
+    Text = '9990'
+  end
+  object EditCoin: TEdit
+    Left = 100
+    Height = 28
+    Top = 64
+    Width = 119
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 1
+    Text = '999990'
+  end
+  object EditAdvProg: TEdit
+    Left = 100
+    Height = 28
+    Top = 104
+    Width = 119
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 2
+    Text = '50'
+  end
+  object BtnSun: TButton
+    Left = 235
+    Height = 32
+    Top = 24
+    Width = 64
+    Anchors = [akTop, akRight]
+    Caption = '修改'
+    OnClick = ChangeSun
+    TabOrder = 3
+  end
+  object BtnCoin: TButton
+    Left = 235
+    Height = 28
+    Top = 64
+    Width = 64
+    Anchors = [akTop, akRight]
+    Caption = '修改'
+    OnClick = ChangeCoin
+    TabOrder = 4
+  end
+  object BtnAdvProg: TButton
+    Left = 235
+    Height = 28
+    Top = 104
+    Width = 64
+    Anchors = [akTop, akRight]
+    Caption = '修改'
+    OnClick = ChangeAdvProg
+    TabOrder = 5
+  end
+end

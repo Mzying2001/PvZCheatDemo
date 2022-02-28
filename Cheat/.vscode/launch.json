@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "编译并运行",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "..\\PvZCheatDemo\\PvZCheatDemo.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "preLaunchTask": "build"
+        }
+    ]
+}
