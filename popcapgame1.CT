@@ -4,36 +4,36 @@
     <CheatEntry>
       <ID>2</ID>
       <Description>"冒险关卡"</Description>
+      <LastState Value="21" RealAddress="094540A4"/>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
-      <Address>popcapgame1.exe+2A9EC0</Address>
+      <Address>006A9EC0</Address>
       <Offsets>
         <Offset>24</Offset>
         <Offset>82C</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
-      <ID>7</ID>
-      <Description>"阳光"</Description>
-      <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
-      <Address>popcapgame1.exe+2A9EC0</Address>
-      <Offsets>
-        <Offset>5560</Offset>
-        <Offset>04</Offset>
-        <Offset>160</Offset>
-        <Offset>768</Offset>
-      </Offsets>
-    </CheatEntry>
-    <CheatEntry>
       <ID>10</ID>
       <Description>"金币"</Description>
+      <LastState Value="8890" RealAddress="094540A8"/>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
-      <Address>popcapgame1.exe+2A9EC0</Address>
+      <Address>006A9EC0</Address>
       <Offsets>
         <Offset>28</Offset>
         <Offset>82C</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>14</ID>
+      <Description>"阳光"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>006A9EC0</Address>
+      <Offsets>
+        <Offset>5560</Offset>
+        <Offset>768</Offset>
       </Offsets>
     </CheatEntry>
   </CheatEntries>
