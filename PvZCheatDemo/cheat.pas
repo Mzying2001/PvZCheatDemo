@@ -18,10 +18,10 @@ var
 implementation
 
 { dll函数 }
-function PVZGetHandle(): THandle; stdcall; external 'cheat.dll';
-procedure PVZSetSun(hProcess: THandle; val: Integer); stdcall; external 'cheat.dll';
-procedure PVZSetCoin(hProcess: THandle; val: Integer); stdcall; external 'cheat.dll';
-procedure PVZSetAdvProg(hProcess: THandle; val: Integer); stdcall; external 'cheat.dll';
+function PVZGetHandle(): THandle; cdecl; external 'cheat.dll';
+procedure PVZSetSun(hProcess: THandle; val: Integer); cdecl; external 'cheat.dll';
+procedure PVZSetCoin(hProcess: THandle; val: Integer); cdecl; external 'cheat.dll';
+procedure PVZSetAdvProg(hProcess: THandle; val: Integer); cdecl; external 'cheat.dll';
 
 { 获取进程ID }
 function GetHandle(): Boolean;
