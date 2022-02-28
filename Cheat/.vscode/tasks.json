@@ -6,6 +6,7 @@
             "command": "g++.exe",
             "args": [
                 "dllmain.cpp",
+                "-shared",
                 "-static",
                 "-o",
                 "..\\PvZCheatDemo\\cheat.dll"
