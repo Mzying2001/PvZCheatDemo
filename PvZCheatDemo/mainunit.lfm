@@ -68,7 +68,7 @@ object MainForm: TMainForm
   end
   object BtnSun: TButton
     Left = 235
-    Height = 32
+    Height = 28
     Top = 24
     Width = 64
     Anchors = [akTop, akRight]

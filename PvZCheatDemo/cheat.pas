@@ -7,45 +7,48 @@ interface
 uses
   Classes, SysUtils;
 
-function GetHandle(): Boolean;
+function GetHWND(): Boolean;
 procedure SetSun(val: Integer);
 procedure SetCoin(val: Integer);
 procedure SetAdvProg(val: Integer);
 
+type
+  HWND = LongWord;
+
 var
-  hProc: THandle;
+  hPVZ: HWND;
 
 implementation
 
 { dll函数 }
-function PVZGetHandle(): THandle; cdecl; external 'cheat.dll';
-procedure PVZSetSun(hProcess: THandle; val: Integer); cdecl; external 'cheat.dll';
-procedure PVZSetCoin(hProcess: THandle; val: Integer); cdecl; external 'cheat.dll';
-procedure PVZSetAdvProg(hProcess: THandle; val: Integer); cdecl; external 'cheat.dll';
+function PVZGetHWND(): HWND; cdecl; external 'cheat.dll';
+procedure PVZSetSun(hPVZ: HWND; val: Integer); cdecl; external 'cheat.dll';
+procedure PVZSetCoin(hPVZ: HWND; val: Integer); cdecl; external 'cheat.dll';
+procedure PVZSetAdvProg(hPVZ: HWND; val: Integer); cdecl; external 'cheat.dll';
 
-{ 获取进程ID }
-function GetHandle(): Boolean;
+{ 获取窗口句柄 }
+function GetHWND(): Boolean;
 begin
-  hProc := PVZGetHandle();
-  result := hProc <> 0;
+  hPVZ := PVZGetHWND();
+  result := hPVZ <> 0;
 end;
 
 { 修改阳光 }
 procedure SetSun(val: Integer);
 begin
-  PVZSetSun(hProc, val);
+  PVZSetSun(hPVZ, val);
 end;
 
 { 修改金币 }
 procedure SetCoin(val: Integer);
 begin
-  PVZSetCoin(hProc, val);
+  PVZSetCoin(hPVZ, val);
 end;
 
 { 修改冒险关卡 }
 procedure SetAdvProg(val: Integer);
 begin
-  PVZSetAdvProg(hProc, val);
+  PVZSetAdvProg(hPVZ, val);
 end;
 
 end.
