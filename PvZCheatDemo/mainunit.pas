@@ -46,7 +46,11 @@ implementation
 { 窗口创建事件 }
 procedure TMainForm.FormCreate(Sender: TObject);
 begin
-
+  if not GetHandle() then
+  begin
+    ShowMessage('找不到游戏');
+    Application.Terminate;
+  end;
 end;
 
 { 修改阳光 }
