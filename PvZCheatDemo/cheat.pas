@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils;
 
-function GetHWND(): Boolean;
+function InitCheat(): Boolean;
 procedure SetSun(val: Integer);
 procedure SetCoin(val: Integer);
 procedure SetAdvProg(val: Integer);
@@ -26,8 +26,8 @@ procedure PVZSetSun(hPVZ: HWND; val: Integer); cdecl; external 'cheat.dll';
 procedure PVZSetCoin(hPVZ: HWND; val: Integer); cdecl; external 'cheat.dll';
 procedure PVZSetAdvProg(hPVZ: HWND; val: Integer); cdecl; external 'cheat.dll';
 
-{ 获取窗口句柄 }
-function GetHWND(): Boolean;
+{ 初始化 - 获取PVZ窗口句柄 }
+function InitCheat(): Boolean;
 begin
   hPVZ := PVZGetHWND();
   result := hPVZ <> 0;
