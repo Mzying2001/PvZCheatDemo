@@ -27,11 +27,11 @@ HANDLE GetHandle(HWND hwnd)
 // 获取偏移后的地址
 LPVOID GetAddress(HANDLE hProc, LPVOID pBase, const int *offset, int cnt)
 {
-    SIZE_T buf = 0;
+    unsigned int buf = 0;
     ReadProcessMemory(hProc, pBase, &buf, 4, NULL);
     for (int i = 0; i < cnt; ++i)
     {
-        pBase = (LPVOID)(buf + offset[i]);
+        pBase = reinterpret_cast<LPVOID>(buf + offset[i]);
         ReadProcessMemory(hProc, pBase, &buf, 4, NULL);
     }
     return pBase;
