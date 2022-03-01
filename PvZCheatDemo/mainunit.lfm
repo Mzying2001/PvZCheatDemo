@@ -14,7 +14,7 @@ object MainForm: TMainForm
   LCLVersion = '2.2.0.4'
   object LabelSun: TLabel
     Left = 20
-    Height = 28
+    Height = 30
     Top = 24
     Width = 70
     AutoSize = False
@@ -23,7 +23,7 @@ object MainForm: TMainForm
   end
   object LabelCoin: TLabel
     Left = 20
-    Height = 28
+    Height = 30
     Top = 64
     Width = 70
     AutoSize = False
@@ -32,7 +32,7 @@ object MainForm: TMainForm
   end
   object LabelAdvProg: TLabel
     Left = 20
-    Height = 28
+    Height = 30
     Top = 104
     Width = 70
     AutoSize = False
@@ -68,7 +68,7 @@ object MainForm: TMainForm
   end
   object BtnSun: TButton
     Left = 235
-    Height = 28
+    Height = 30
     Top = 24
     Width = 64
     Anchors = [akTop, akRight]
@@ -78,7 +78,7 @@ object MainForm: TMainForm
   end
   object BtnCoin: TButton
     Left = 235
-    Height = 28
+    Height = 30
     Top = 64
     Width = 64
     Anchors = [akTop, akRight]
@@ -88,7 +88,7 @@ object MainForm: TMainForm
   end
   object BtnAdvProg: TButton
     Left = 235
-    Height = 28
+    Height = 30
     Top = 104
     Width = 64
     Anchors = [akTop, akRight]
