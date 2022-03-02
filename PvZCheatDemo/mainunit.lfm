@@ -13,85 +13,138 @@ object MainForm: TMainForm
   Position = poScreenCenter
   LCLVersion = '2.2.0.4'
   object LabelSun: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
     Left = 20
-    Height = 30
-    Top = 24
-    Width = 70
+    Height = 32
+    Top = 20
+    Width = 64
     AutoSize = False
+    BorderSpacing.Left = 20
+    BorderSpacing.Top = 20
     Caption = '阳光'
     Layout = tlCenter
   end
   object LabelCoin: TLabel
+    AnchorSideLeft.Control = LabelSun
+    AnchorSideTop.Control = LabelSun
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = LabelSun
+    AnchorSideRight.Side = asrBottom
     Left = 20
-    Height = 30
-    Top = 64
-    Width = 70
+    Height = 32
+    Top = 62
+    Width = 64
+    Anchors = [akTop, akLeft, akRight]
     AutoSize = False
+    BorderSpacing.Top = 10
     Caption = '金币'
     Layout = tlCenter
   end
   object LabelAdvProg: TLabel
+    AnchorSideLeft.Control = LabelSun
+    AnchorSideTop.Control = LabelCoin
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = LabelSun
+    AnchorSideRight.Side = asrBottom
     Left = 20
-    Height = 30
+    Height = 32
     Top = 104
-    Width = 70
+    Width = 64
+    Anchors = [akTop, akLeft, akRight]
     AutoSize = False
+    BorderSpacing.Top = 10
     Caption = '冒险关卡'
     Layout = tlCenter
   end
   object EditSun: TEdit
-    Left = 100
+    AnchorSideLeft.Control = LabelSun
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = LabelSun
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = BtnSun
+    Left = 94
     Height = 28
-    Top = 24
-    Width = 119
+    Top = 22
+    Width = 132
     Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 10
+    BorderSpacing.Right = 10
     TabOrder = 0
     Text = '9990'
   end
   object EditCoin: TEdit
-    Left = 100
+    AnchorSideLeft.Control = EditSun
+    AnchorSideTop.Control = LabelCoin
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = EditSun
+    AnchorSideRight.Side = asrBottom
+    Left = 94
     Height = 28
     Top = 64
-    Width = 119
+    Width = 132
     Anchors = [akTop, akLeft, akRight]
     TabOrder = 1
     Text = '999990'
   end
   object EditAdvProg: TEdit
-    Left = 100
+    AnchorSideLeft.Control = EditSun
+    AnchorSideTop.Control = LabelAdvProg
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = EditSun
+    AnchorSideRight.Side = asrBottom
+    Left = 94
     Height = 28
-    Top = 104
-    Width = 119
+    Top = 106
+    Width = 132
     Anchors = [akTop, akLeft, akRight]
     TabOrder = 2
     Text = '50'
   end
   object BtnSun: TButton
-    Left = 235
-    Height = 30
-    Top = 24
+    AnchorSideTop.Control = LabelSun
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = LabelSun
+    AnchorSideBottom.Side = asrBottom
+    Left = 236
+    Height = 32
+    Top = 20
     Width = 64
-    Anchors = [akTop, akRight]
+    Anchors = [akTop, akRight, akBottom]
+    BorderSpacing.Right = 20
     Caption = '修改'
     OnClick = ChangeSun
     TabOrder = 3
   end
   object BtnCoin: TButton
-    Left = 235
-    Height = 30
-    Top = 64
+    AnchorSideLeft.Control = BtnSun
+    AnchorSideTop.Control = LabelCoin
+    AnchorSideRight.Control = BtnSun
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = LabelCoin
+    AnchorSideBottom.Side = asrBottom
+    Left = 236
+    Height = 32
+    Top = 62
     Width = 64
-    Anchors = [akTop, akRight]
+    Anchors = [akTop, akLeft, akRight, akBottom]
     Caption = '修改'
     OnClick = ChangeCoin
     TabOrder = 4
   end
   object BtnAdvProg: TButton
-    Left = 235
-    Height = 30
+    AnchorSideLeft.Control = BtnSun
+    AnchorSideTop.Control = LabelAdvProg
+    AnchorSideRight.Control = BtnSun
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = LabelAdvProg
+    AnchorSideBottom.Side = asrBottom
+    Left = 236
+    Height = 32
     Top = 104
     Width = 64
-    Anchors = [akTop, akRight]
+    Anchors = [akTop, akLeft, akRight, akBottom]
     Caption = '修改'
     OnClick = ChangeAdvProg
     TabOrder = 5
